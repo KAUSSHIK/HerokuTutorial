@@ -4,8 +4,10 @@ from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os
 import requests
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 load_dotenv()
 
