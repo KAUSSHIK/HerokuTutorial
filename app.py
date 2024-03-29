@@ -16,7 +16,7 @@ news_api_key = os.getenv('NEWS_API_KEY')
 
 @app.route('/ipl', methods=['GET'])
 def home_landing():
-    return  jsonify(message="Hello, my fellow IPL fans!!")
+    return  jsonify(message="Hello, my fellow IPL fans!! This is also a hello from heroku :wink: !!")
 
 @app.route('/ipl/news/<string:news_type>', methods=['GET'])
 def ipl_news(news_type):
